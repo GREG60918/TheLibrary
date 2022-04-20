@@ -1,0 +1,12 @@
+﻿@model Customer
+
+<h2>@Model.Name</h2>
+
+<ul>
+    <li>Membership Type: @Model.MembershipType.Name</li>
+
+    @if(Model.BirthDate.HasValue)
+    {
+        <li>Membership Type: @Model.BirthDate.Value</li>
+    }
+</ul>
